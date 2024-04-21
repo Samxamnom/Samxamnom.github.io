@@ -15,6 +15,7 @@
           buildInputs = [
             nodePackages.pnpm
           ];
+          # pnpm new-post <filename>
 
           shellHook = ''
             [[ -v SHELL ]] && exec "$SHELL"
