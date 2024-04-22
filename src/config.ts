@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
   title: "Samxamnom's Blog",
   subtitle: "Demo Site",
   lang: "en",
-  themeHue: 250,
+  themeHue: 170, // default 250 -- 170 adopted from catppuccin teal
   banner: {
     enable: false,
     src: "assets/images/demo-banner.png",
@@ -31,9 +31,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-  avatar: "assets/images/demo-avatar.png",
+  // avatar: "", // assets/images/demo-avatar.png
   name: "Samxamnom",
-  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  // bio: "", // Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   links: [
     // {
     //   name: "Twitter",
