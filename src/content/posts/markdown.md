@@ -113,6 +113,15 @@ Table: Shoes, their sizes, and what they're made of
 (The above is the caption for the table.) Pandoc also supports
 multi-line tables:
 
+### Some real markdown table:
+
+
+|size|material|color         |
+|----|--------|--------------|
+|9   |leather |brown         |
+|10  |hemp    |canvas natural|
+|11  |glass   |transparent   |
+
 ------- ---------------------
 keyword text
 ------- ---------------------
