@@ -31,9 +31,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-  avatar: "", // assets/images/demo-avatar.png
+  // avatar: "", // assets/images/demo-avatar.png
   name: "Samxamnom",
-  bio: "", // Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  // bio: "", // Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   links: [
     // {
     //   name: "Twitter",

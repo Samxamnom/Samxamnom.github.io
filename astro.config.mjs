@@ -1,5 +1,5 @@
 import tailwind from "@astrojs/tailwind";
-import Compress from "astro-compress";
+// import Compress from "astro-compress"; // somehow crashes my dev server
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
 import Color from "colorjs.io";
@@ -45,9 +45,19 @@ export default defineConfig({
         "fa6-solid": ["*"],
       },
     }),
-    Compress({
+    // Compress({
+    //   Image: false,
+    // }),
+    // https://github.com/Playform/Compress/issues/319#issuecomment-2027978924
+    import.meta.env.PROD &&
+    (await import("astro-compress")).default({
+      CSS: true,
+      HTML: true,
       Image: false,
+      JavaScript: true,
+      SVG: true,
     }),
+
     svelte(),
   ],
   markdown: {
